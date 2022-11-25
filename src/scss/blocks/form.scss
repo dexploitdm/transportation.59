@@ -41,4 +41,19 @@
       }
     }
   }
+  .msg {
+    color: $base-color;
+    font-size: 20px;
+    text-align: center;
+    margin: 20px 0 30px;
+    display: none;
+  }
+  &.send {
+    .msg {
+      display: block;
+    }
+    button {
+      display: none;
+    }
+  }
 }

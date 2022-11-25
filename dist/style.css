@@ -502,6 +502,19 @@ body.open .drawer {
     .gl-form-control input.error ~ label {
       color: red; }
 
+.gl-form .msg {
+  color: #fff019;
+  font-size: 20px;
+  text-align: center;
+  margin: 20px 0 30px;
+  display: none; }
+
+.gl-form.send .msg {
+  display: block; }
+
+.gl-form.send button {
+  display: none; }
+
 .screen h1 {
   font-family: 'Seymour One', sans-serif;
   font-size: 70px;

@@ -33,18 +33,15 @@ get_header(); ?>
                                 <label>Ваше имя</label>
                             </div>
                             <div class="gl-form-control">
-                                <input type="text" name="phone" value="" class="gl-input">
+                                <input type="text" name="phone" value="" class="gl-input mask-phone">
                                 <label>Ваш номер телефона (обязательно)</label>
                             </div>
                             <div class="gl-form-control">
                                 <input type="text" name="comment" value="" class="gl-input">
                                 <label>Комментарий</label>
                             </div>
-
-                            <div class="btn-anim"><span></span><span></span><span></span><span></span>Расчитать</div>
+                            <div class="msg">Заявка отправлена. С Вами свяжется наш сотрудник</div>
                             <button class="btn-anim"><span></span><span></span><span></span><span></span>Расчитать</button>
-                            <button type="submit" id="submit" class="go">Отправить сообщение</button>
-
                         </form>
 
 
@@ -112,8 +109,7 @@ get_header(); ?>
                     url: "<?php echo get_template_directory_uri() ?>/mail/mail.php",
                     data: str,
                     success: function(msg) {
-                        console.log(msg)
-
+                        formSend.addClass('send')
                     }
                 });
                 return false;

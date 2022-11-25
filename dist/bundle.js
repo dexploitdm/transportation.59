@@ -37,7 +37,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scs
   \*************************/
 /***/ (() => {
 
-eval("$( document ).ready(function() {\r\n    const inputs = $('.gl-input');\r\n    inputs.focusout(function() {\r\n        const input = $(this);\r\n        input.val().length > 0 ? input.addClass(\"valid\") : input.removeClass(\"valid\");\r\n    })\r\n    //home form\r\n\r\n\r\n});\n\n//# sourceURL=webpack://dk/./src/js/forms.js?");
+eval("$( document ).ready(function() {\r\n    const inputs = $('.gl-input');\r\n    inputs.focusout(function() {\r\n        const input = $(this);\r\n        input.val().length > 0 ? input.addClass(\"valid\") : input.removeClass(\"valid\");\r\n    })\r\n    //home form\r\n    //mask-phone\r\n    $('.mask-phone').mask('0(000) 000-0000');\r\n    const formHome = $('.screen-form');\r\n    const submit = formHome.find('button')\r\n    if(submit.length > 0){\r\n        submit.click(function() {\r\n            const phone = formHome.find('.mask-phone')\r\n            if(phone.val().length === 0) {\r\n                phone.addClass('error')\r\n                return false\r\n            }\r\n        });\r\n    }\r\n    formHome.find('.mask-phone').focusout(function() {\r\n        const input = $(this);\r\n        if(input.val().length > 0) {\r\n            input.removeClass(\"error\");\r\n        }\r\n    })\r\n});\n\n//# sourceURL=webpack://dk/./src/js/forms.js?");
 
 /***/ }),
 
