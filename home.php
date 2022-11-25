@@ -45,7 +45,9 @@ get_header(); ?>
                         </form>
 
 
-                        <div class="screen-cover"></div>
+                        <div class="screen-cover">
+                            <img src="<?php  echo get_template_directory_uri() ?>/images/screen-cover.png">
+                        </div>
 
                     </div>
                 </div>

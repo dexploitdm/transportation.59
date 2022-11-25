@@ -67,6 +67,20 @@ main {
   font-family: 'Seymour One', sans-serif;
   font-size: 40px; }
 
+h1 {
+  font-family: 'Seymour One', sans-serif;
+  font-size: 70px;
+  letter-spacing: 3px;
+  text-align: center; }
+
+@media (max-width: 980px) {
+  h1 {
+    font-size: 50px; } }
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 36px; } }
+
 .btn-bit {
   padding: 12px;
   border-radius: 10px;
@@ -516,16 +530,16 @@ body.open .drawer {
   display: none; }
 
 .screen h1 {
-  font-family: 'Seymour One', sans-serif;
-  font-size: 70px;
-  letter-spacing: 3px;
-  text-align: center;
   color: #fff019; }
 
 .screen-content {
-  padding-top: 20px; }
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
 
 .screen-form {
+  width: 100%;
   max-width: 400px;
   padding: 40px;
   background: #151414ed;
@@ -538,6 +552,21 @@ body.open .drawer {
     color: #fff019;
     text-align: center;
     margin-bottom: 30px; }
+
+.screen-cover {
+  margin-left: 20px; }
+  .screen-cover img {
+    width: 100%;
+    max-width: 700px;
+    transition: .3s; }
+
+@media (max-width: 768px) {
+  .screen-content {
+    flex-wrap: wrap; }
+  .screen-form {
+    max-width: 100%; }
+  .screen-cover {
+    margin: 20px 0 0; } }
 
 .gl-info {
   margin: 40px 0;

@@ -69,3 +69,19 @@ main {
   font-family: 'Seymour One', sans-serif;
   font-size: 40px;
 }
+h1 {
+  font-family: 'Seymour One', sans-serif;
+  font-size: 70px;
+  letter-spacing: 3px;
+  text-align: center;
+}
+@media (max-width: 980px) {
+  h1 {
+    font-size: 50px;
+  }
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 36px;
+  }
+}
