@@ -3,6 +3,7 @@
   background-color: $base-color;
   color: black;
   padding: 75px 0;
+  transition: .3s;
   .page-title {
     font-family: 'Seymour One', sans-serif;
     color: black;
@@ -28,6 +29,27 @@
       font-size: 18px;
       span {
         font-weight: 700;
+      }
+    }
+  }
+  @media (max-width: 1100px) {
+    &-content {
+      flex-wrap: wrap;
+      justify-content: center;
+      &_item {
+        margin: 10px;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    padding: 40px 0;
+    &-content {
+      display: block;
+      &_item {
+        justify-content: flex-start;
+        &:not(:last-child) {
+          margin-bottom: 20px;
+        }
       }
     }
   }

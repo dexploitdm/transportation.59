@@ -75,11 +75,15 @@ h1 {
 
 @media (max-width: 980px) {
   h1 {
-    font-size: 50px; } }
+    font-size: 50px; }
+  .page-title {
+    font-size: 36px; } }
 
 @media (max-width: 768px) {
   h1 {
-    font-size: 36px; } }
+    font-size: 36px; }
+  .page-title {
+    font-size: 30px; } }
 
 .btn-bit {
   padding: 12px;
@@ -572,7 +576,8 @@ body.open .drawer {
   margin: 40px 0 0;
   background-color: #fff019;
   color: black;
-  padding: 75px 0; }
+  padding: 75px 0;
+  transition: .3s; }
   .gl-info .page-title {
     font-family: 'Seymour One', sans-serif;
     color: black;
@@ -594,6 +599,21 @@ body.open .drawer {
       font-size: 18px; }
       .gl-info-content_desc span {
         font-weight: 700; }
+  @media (max-width: 1100px) {
+    .gl-info-content {
+      flex-wrap: wrap;
+      justify-content: center; }
+      .gl-info-content_item {
+        margin: 10px; } }
+  @media (max-width: 768px) {
+    .gl-info {
+      padding: 40px 0; }
+      .gl-info-content {
+        display: block; }
+        .gl-info-content_item {
+          justify-content: flex-start; }
+          .gl-info-content_item:not(:last-child) {
+            margin-bottom: 20px; } }
 
 .reviews {
   padding: 0 0 50px; }
@@ -625,14 +645,30 @@ body.open .drawer {
     color: black;
     text-align: left; }
     .reviews-content_from {
-      font-size: 15px;
-      font-weight: 600; }
+      font-size: 14px;
+      font-weight: 600;
+      margin-top: 10px; }
   .reviews .swiper-wrapper {
     margin-bottom: 49px; }
   .reviews .swiper-pagination-bullet {
     background: black; }
   .reviews .swiper-pagination-bullet-active {
     background: black; }
+  @media (max-width: 768px) {
+    .reviews .container-layout {
+      padding: 0; }
+    .reviews .swiper-slide {
+      flex-wrap: wrap; }
+    .reviews-block {
+      border-radius: 0; }
+    .reviews-layout {
+      border-radius: 20px; }
+    .reviews-cover {
+      margin: 0 0 20px; }
+    .reviews-content {
+      padding: 0 20px; }
+      .reviews-content_desc {
+        font-size: 16px; } }
 
 .swiper {
   width: 100%;

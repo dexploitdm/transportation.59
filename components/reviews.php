@@ -1,13 +1,11 @@
-<div class="container">
-    <div class="container-layout">
-        <div class="reviews">
-
+<div class="reviews">
+    <div class="container">
+        <div class="container-layout">
             <div class="reviews-block bg-lines">
-
                 <div class="reviews-layout">
                     <div class="reviews-layout_block">
                         <h2 class="page-title">Отзывы</h2>
-                        <div class="swiper mySwiper">
+                        <div class="swiper reviewsSwiper">
                             <div class="swiper-wrapper">
                                 <?php $banhome = new WP_Query(array('post_type' => 'banhome', 'order' => 'ASC')) ?>
                                 <?php if ($banhome->have_posts() ): ?>
@@ -33,17 +31,7 @@
                             <div class="swiper-pagination"></div>
                         </div>
                     </div>
-
                 </div>
-
-
-
-
-
-
-
-
-
             </div>
         </div>
     </div>

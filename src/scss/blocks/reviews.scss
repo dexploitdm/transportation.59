@@ -33,12 +33,10 @@
   &-content {
     color: black;
     text-align: left;
-    &_desc {
-
-    }
     &_from {
-      font-size: 15px;
+      font-size: 14px;
       font-weight: 600;
+      margin-top: 10px;
     }
   }
   .swiper-wrapper {
@@ -50,16 +48,34 @@
   .swiper-pagination-bullet-active {
     background: black;
   }
+  @media (max-width: 768px) {
+    .container-layout {
+      padding: 0;
+    }
+    .swiper-slide {
+      flex-wrap: wrap;
+    }
+    &-block {
+      border-radius: 0;
+    }
+    &-layout {
+      border-radius: 20px;
+    }
+    &-cover {
+      margin: 0 0 20px;
+    }
+    &-content {
+      padding:  0 20px;
+      &_desc {
+        font-size: 16px;
+      }
+    }
+  }
 }
 .swiper {
   width: 100%;
   height: 100%;
 }
-
-
-
-
-
 .swiper-slide {
   text-align: center;
   font-size: 18px;
