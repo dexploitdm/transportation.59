@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Seymour+One&display=swap');
+
+// font-family: 'Roboto', sans-serif;
+// font-family: 'Seymour One', sans-serif;
+
+html { height: 100%; }
+
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+body {
+    flex-grow: 1;
+    background: url(../../images/cover.jpg) 50% 50%/cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+@supports (background-image: -webkit-image-set(url(../../images/cover.webp) 1x)) {
+    body {
+        background-image: -webkit-image-set(url(../../images/cover.webp) 1x);
+    }
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    &-layout {
+        padding: 0 20px;
+    }
+}
+.bg-lines {
+  background: repeating-linear-gradient( 45deg, #fff019, #fff019 10px, #000000 10px, #000000 20px );
+}
+main {
+  margin-top: 50px;
+  transition: .3s;
+  @media (max-width: 980px) {
+    margin-top: 100px;
+  }
+}
+.page-title {
+  font-family: 'Seymour One', sans-serif;
+  font-size: 40px;
+}

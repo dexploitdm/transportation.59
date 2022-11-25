@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7499b59c-465c-4cea-9ef5-43700f5bba72" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="2HwNIsnUsJVGbKg4ddSoZmUSQCk" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/core" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\OpenServer2\domains\transportation\wp-content\themes\transportation" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\OpenServer2\domains\transportation\wp-content\themes\transportation\core" />
+      <recent name="C:\OpenServer2\domains\transportation\wp-content\themes\transportation" />
+      <recent name="C:\OpenServer2\domains\transportation\wp-content\themes\transportation\images" />
+      <recent name="C:\OpenServer2\domains\transportation\wp-content\themes\transportation\images\icons" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7499b59c-465c-4cea-9ef5-43700f5bba72" name="Default Changelist" comment="" />
+      <created>1669192109909</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1669192109909</updated>
+      <workItem from="1669192111243" duration="1576000" />
+      <workItem from="1669197598802" duration="5503000" />
+      <workItem from="1669270795284" duration="17398000" />
+      <workItem from="1669357889053" duration="11000" />
+      <workItem from="1669357905783" duration="6435000" />
+      <workItem from="1669367191140" duration="1844000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="805" y="307" key="FileChooserDialogImpl" timestamp="1669362514452">
+      <screen x="0" y="0" width="2048" height="1104" />
+    </state>
+    <state x="805" y="307" key="FileChooserDialogImpl/0.0.2048.1104@0.0.2048.1104" timestamp="1669362514452" />
+    <state x="860" y="472" key="NewPhpFileDialog" timestamp="1669360797696">
+      <screen x="0" y="0" width="2048" height="1104" />
+    </state>
+    <state x="860" y="472" key="NewPhpFileDialog/0.0.2048.1104@0.0.2048.1104" timestamp="1669360797696" />
+    <state x="735" y="269" width="577" height="566" key="find.popup" timestamp="1669364970259">
+      <screen x="0" y="0" width="2048" height="1104" />
+    </state>
+    <state x="735" y="269" width="577" height="566" key="find.popup/0.0.2048.1104@0.0.2048.1104" timestamp="1669364970259" />
+  </component>
+</project>

@@ -1,0 +1,39 @@
+.gl-form {
+  &-control {
+    position: relative;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+    label {
+      color: black;
+      display: block;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 10px 0;
+      font-size: 16px;
+      color: #fff;
+      pointer-events: none;
+      transition: .5s;
+    }
+    input {
+      width: 100%;
+      padding: 10px 0;
+      font-size: 16px;
+      color: #fff;
+      border: none;
+      border-bottom: 1px solid #fff;
+      outline: none;
+      background: transparent;
+      &:focus ~ label,
+      &.valid ~ label {
+        top: -20px;
+        left: 0;
+        color: $base-color;
+        font-size: 12px;
+      }
+
+    }
+  }
+}
