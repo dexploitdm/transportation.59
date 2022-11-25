@@ -87,6 +87,8 @@ get_header(); ?>
             </div>
         </div>
 
+        <?php get_template_part( 'components/reviews'); ?>
+
         <div class="container">
             <div class="container-layout">
                 <h1>Main</h1>
