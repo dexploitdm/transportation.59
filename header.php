@@ -5,8 +5,9 @@
     <title><?php the_title() ?></title>
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="author" content="Dexploitdm">
+    <meta name="author" content="dexploitdm">
     <meta name="theme-color" content="#2D3C3E">
+    <link rel="icon" type="image/png" href="<?php  echo get_template_directory_uri() ?>/favicon.png">
     <link href="<?php  echo get_template_directory_uri() ?>/dist/style.css" rel="stylesheet">
     <?php  wp_head(); ?>
     <script
