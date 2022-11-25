@@ -90,6 +90,8 @@ main {
   overflow: hidden;
   letter-spacing: 4px;
   cursor: pointer;
+  background-color: transparent;
+  border: 0;
   transition: .5s; }
   .btn-anim span {
     position: absolute;
@@ -495,6 +497,10 @@ body.open .drawer {
       left: 0;
       color: #fff019;
       font-size: 12px; }
+    .gl-form-control input.error {
+      border-bottom: 1px solid red; }
+    .gl-form-control input.error ~ label {
+      color: red; }
 
 .screen h1 {
   font-family: 'Seymour One', sans-serif;

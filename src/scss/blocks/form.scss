@@ -33,7 +33,12 @@
         color: $base-color;
         font-size: 12px;
       }
-
+      &.error {
+        border-bottom: 1px solid red;
+      }
+      &.error  ~ label {
+        color: red;
+      }
     }
   }
 }
