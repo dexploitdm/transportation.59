@@ -79,9 +79,15 @@ h1 {
   h1 {
     font-size: 50px;
   }
+  .page-title {
+    font-size: 36px;
+  }
 }
 @media (max-width: 768px) {
   h1 {
     font-size: 36px;
+  }
+  .page-title {
+    font-size: 30px;
   }
 }
