@@ -10,10 +10,15 @@ $mail = new PHPMailer;
 $mail->CharSet = 'utf-8';
 
 if ($_POST) { // если передан массив POST
+    $from_region = $_POST['from_region'];
+    $to_region = $_POST['to_region'];
+    $cargo_weight = $_POST['cargo_weight'];
+    $cargo_volume = $_POST['cargo_volume'];
     $name = $_POST['name'];
-    $email = $_POST['email'];
-    $msg = $_POST['msg'];
+    $phone = $_POST['phone'];
+    $comment = $_POST['comment'];
     $json = array(); // подготовим массив ответа
+
     function mime_header_encode($str, $data_charset, $send_charset) { // функция преобразования заголовков в верную кодировку
         if($data_charset != $send_charset)
             $str=iconv($data_charset,$send_charset.'//IGNORE',$str);
@@ -35,9 +40,13 @@ if ($_POST) { // если передан массив POST
     $mail->Subject = 'Ujin';
     $mail->Body    = '
     Клиент оставил заявку:<br>
-    <b>Имя:</b> ' .$name . '<br> 
-    <b>Почта:</b> ' .$email. '<br>
-    <b>Вопрос или комментарий клиента:</b> ' .$msg. '';
+    <b>Откуда везем (регион/город отправки):</b> ' .$from_region . '<br> 
+    <b>Куда везем (регион/город назначения):</b> ' .$to_region. '<br>
+    <b>Вес груза (в кг):</b> ' .$cargo_weight. '<br>
+    <b>Объем груза (в м3):</b> ' .$cargo_volume. '<br>
+    <b>Имя:</b> ' .$name. '<br>
+    <b>Телефон:</b> ' .$phone. '<br>
+    <b>Комментарий:</b> ' .$comment. '';
     $mail->AltBody = '';
     $mail->send();
     $json['error'] = 0;

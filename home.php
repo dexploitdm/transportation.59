@@ -10,56 +10,43 @@ get_header(); ?>
                 <div class="screen">
                     <h1>Закажите расчет стоимости перевозки</h1>
                     <div class="screen-content">
-<!--                        <form  id="contact" class="screen-form gl-form">-->
-<!--                            <div class="screen-form_title">Заполните форму</div>-->
-<!--                            <div class="gl-form-control ">-->
-<!--                                <input type="text" name="from_region" value="" class="gl-input">-->
-<!--                                <label>Откуда везем (регион/город отправки)</label>-->
-<!--                            </div>-->
-<!--                            <div class="gl-form-control">-->
-<!--                                <input type="text" name="to_region" value="" class="gl-input">-->
-<!--                                <label>Куда везем (регион/город назначения)</label>-->
-<!--                            </div>-->
-<!--                            <div class="gl-form-control">-->
-<!--                                <input type="text" name="to_region" value="" class="gl-input">-->
-<!--                                <label>Вес груза (в кг)</label>-->
-<!--                            </div>-->
-<!--                            <div class="gl-form-control">-->
-<!--                                <input type="text" name="to_region" value="" class="gl-input">-->
-<!--                                <label>Объем груза (в м3)</label>-->
-<!--                            </div>-->
-<!--                            <div class="gl-form-control">-->
-<!--                                <input type="text" name="to_region" value="" class="gl-input">-->
-<!--                                <label>Ваш номер телефона (обязательно)</label>-->
-<!--                            </div>-->
-<!--                            <div class="gl-form-control">-->
-<!--                                <input type="text" name="to_region" value="" class="gl-input">-->
-<!--                                <label>Комментарий</label>-->
-<!--                            </div>-->
-<!---->
-<!--                            <div class="btn-anim"><span></span><span></span><span></span><span></span>Расчитать</div>-->
-<!--                            <button type="submit" id="submit" class="go">Отправить сообщение</button>-->
-<!---->
-<!--                        </form>-->
-                        <form id="contact" method="post">
-                            <div class="u-controls">
-                                <input class="u-input js-email" type="text" placeholder="Ваш E-mail" name="email">
+                        <form  id="contact" method="post" class="screen-form gl-form">
+                            <div class="screen-form_title">Заполните форму</div>
+                            <div class="gl-form-control ">
+                                <input type="text" name="from_region" value="" class="gl-input">
+                                <label>Откуда везем (регион/город отправки)</label>
                             </div>
-                            <div class="u-controls">
-                                <input class="u-input js-name" type="text" placeholder="Как вас зовут" name="name">
+                            <div class="gl-form-control">
+                                <input type="text" name="to_region" value="" class="gl-input">
+                                <label>Куда везем (регион/город назначения)</label>
                             </div>
-                            <div class="u-controls">
-                                <input class="u-input js-msg" type="text" placeholder="Вопрос или комментарий" name="msg">
+                            <div class="gl-form-control">
+                                <input type="text" name="cargo_weight" value="" class="gl-input">
+                                <label>Вес груза (в кг)</label>
                             </div>
-                            <div class="u-controls form-btn">
-                                <button class="jk-btn js-submit jk-btn-neon call" type="submit" disabled>
-                                    Отправить
-                                </button>
+                            <div class="gl-form-control">
+                                <input type="text" name="cargo_volume" value="" class="gl-input">
+                                <label>Объем груза (в м3)</label>
+                            </div>
+                            <div class="gl-form-control">
+                                <input type="text" name="name" value="" class="gl-input">
+                                <label>Ваше имя</label>
+                            </div>
+                            <div class="gl-form-control">
+                                <input type="text" name="phone" value="" class="gl-input">
+                                <label>Ваш номер телефона (обязательно)</label>
+                            </div>
+                            <div class="gl-form-control">
+                                <input type="text" name="comment" value="" class="gl-input">
+                                <label>Комментарий</label>
+                            </div>
 
-                            </div>
-                            <div class="msg-note msg-note-footer">Сообщение отправленно</div>
+                            <div class="btn-anim"><span></span><span></span><span></span><span></span>Расчитать</div>
+                            <button class="btn-anim"><span></span><span></span><span></span><span></span>Расчитать</button>
+                            <button type="submit" id="submit" class="go">Отправить сообщение</button>
 
                         </form>
+
 
                         <div class="screen-cover"></div>
 
@@ -112,24 +99,11 @@ get_header(); ?>
 
         
         
-      
 
     </main>
     <script>
-        // var swiper = new Swiper('.swiper-container', {
-        //     pagination: {
-        //         el: '.swiper-pagination',
-        //         type: 'fraction',
-        //     },
-        //     navigation: {
-        //         nextEl: '.swiper-button-next',
-        //         prevEl: '.swiper-button-prev',
-        //     },
-        // });
         jQuery(document).ready(function($) {
             const formSend = $("#contact");
-
-
             formSend.submit(function(e) {
                 var str = $(this).serialize();
                 e.preventDefault();
